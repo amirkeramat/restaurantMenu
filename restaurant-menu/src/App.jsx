@@ -42,10 +42,8 @@ function App() {
           <h1 className='text-7xl'>Our Menu</h1>
           <span className='w-[40%] h-[10px] rounded-xl bg-sky-500 mt-2'></span>
         </div>
-        {categoryItems ? (
+        {categoryItems &&(
           <Category items={categoryItems} filterMenu={filterMenus} />
-        ) : (
-          <div>Loading</div>
         )}
 
         {datas ? <Menu items={menuItems} /> : <div>Loading</div>}
